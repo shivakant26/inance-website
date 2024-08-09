@@ -2,6 +2,7 @@ import React from "react";
 import ServiceOne from "../assets/images/s1.png";
 import Servicetwo from "../assets/images/s2.png";
 import Servicethree from "../assets/images/s3.png";
+import Button from "../components/common/Button";
 const Service = () =>{
     return(
         <section>
@@ -33,7 +34,7 @@ const Service = () =>{
                   isthat it has a more-or-less normal
                 </p>
               </div>
-              <a href="">View More</a>
+              <Button type="link" className="link-btn">View More</Button>
             </div>
           </div>
         </div>

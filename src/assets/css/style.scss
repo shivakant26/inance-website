@@ -154,21 +154,6 @@
             p{
                 margin-bottom: 10px;
             }
-            a{
-                text-decoration: none;
-                display: block;
-                background-color: #0355cc;
-                width: 180px;
-                text-transform: uppercase;
-                color: #fff;
-                text-align: center;
-                padding: 10px 0px;
-                transition: .4s;
-                border-radius: 8px;
-                &:hover{
-                    background-color: #ff8a1d;
-                }
-            }
         }
         .about-image{
             width: 50%;
@@ -198,21 +183,6 @@
             }
             p{
                 padding: 20px 0px;
-            }
-            a{
-                text-decoration: none;
-                display: block;
-                background-color: #ff8a1d;
-                width: 180px;
-                text-transform: uppercase;
-                color: #fff;
-                text-align: center;
-                padding: 10px 0px;
-                transition: .4s;
-                border-radius: 8px;
-                &:hover{
-                    background-color: #0355cc;
-                }
             }
         }
         .we-image{
@@ -253,22 +223,6 @@
             &:hover{
                 background-color: #ff8a1d;
                 color: #fff;
-            }
-        }
-        a{
-            text-decoration: none;
-            display: block;
-            background-color: #0355cc;
-            width: 180px;
-            text-transform: uppercase;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0px;
-            margin-top: 25px;
-            transition: .4s;
-            border-radius: 8px;
-            &:hover{
-                background-color: #ff8a1d;
             }
         }
     }
@@ -434,5 +388,30 @@
 
             }
         }
+    }
+}
+
+// common btn
+.link-btn{
+    text-decoration: none;
+    display: block;
+    background-color: #0355cc;
+    width: 180px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0px;
+    margin-top: 25px;
+    transition: .4s;
+    border-radius: 8px;
+    &:hover{
+        background-color: #ff8a1d;
+    }
+}
+
+.read-btn{
+    background-color: #ff8a1d;
+    &:hover{
+        background-color: #0355cc;
     }
 }

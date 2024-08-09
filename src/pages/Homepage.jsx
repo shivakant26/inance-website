@@ -1,61 +1,17 @@
 import React from "react";
 import BannerImage from "../assets/images/slider-img.png";
-import AboutImage from "../assets/images/about-img.jpg";
 import ProfessionlImage from "../assets/images/professional-img.png";
-import ServiceOne from "../assets/images/s1.png";
-import Servicetwo from "../assets/images/s2.png";
-import Servicethree from "../assets/images/s3.png";
 import Client1 from "../assets/images/client-1.jpg";
 import { GiAutoRepair } from "react-icons/gi";
 import { MdSelfImprovement, MdDomainAdd } from "react-icons/md";
-import { FaEnvelope, FaFacebook, FaInstagram, FaLocationArrow, FaMailBulk, FaPhone, FaPhoneAlt, FaStar, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 import Contactus from "./Contactus";
 import Service from "./Services";
 import About from "./About";
+import Button from "../components/common/Button";
 const Homepage = () => {
   return (
     <>
-      {/* <header>
-        <div className="header-top">
-          <div className="center-wr">
-            <div className="contact-info">
-                <div>
-                <span><FaPhoneAlt /></span>
-              <a href="">Call : 02020202002</a>
-
-                </div>
-                <div>
-                <span><FaEnvelope /></span>
-
-              <a href="">Mail : mail@gmail.com</a>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div className="header-bottom">
-          <div className="center-wr">
-            <div className="top-header-inner">
-              <a href="">Inance</a>
-              <div className="menu">
-                <ul>
-                  <li>
-                    <a href="">Home</a>
-                  </li>
-                  <li>
-                    <a href="">About</a>
-                  </li>
-                  <li>
-                    <a href="">Services</a>
-                  </li>
-                  <li>
-                    <a href="">Contact us</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header> */}
       <section>
         <div className="banner">
           <div className="center-wr">
@@ -115,7 +71,9 @@ const Homepage = () => {
                   sure there isn't anything embarrassing hidden in the middle of
                   text. All randomised words which don't look even slightly
                 </p>
-                <a href="">Read more</a>
+                <Button type="link" className="read-btn link-btn">
+                  Read more
+                </Button>
               </div>
             </div>
           </div>
@@ -174,52 +132,6 @@ const Homepage = () => {
         </div>
       </section>
       <Contactus />
-      {/* <section>
-        <div className="get-in-touch">
-            <div className="center-wr">
-                <h2>Get in touch</h2>
-                <div className="touch-contact">
-                    <div className="location">
-                        <span><FaLocationArrow /></span>
-                        <p>123 , Maxico city London</p>
-                    </div>
-                    <div className="call">
-                       <span><FaPhone /></span> 
-                        <p>0123456789</p>
-                    </div>
-                    <div className="mail">
-                        <span><FaEnvelope /></span>
-                        <p>domain@gmail.com</p>
-                    </div>
-                </div>
-                <div className="follow-us">
-                    <h3>Follow Us</h3>
-                    <ul>
-                        <li>
-                            <a href="">
-                                <FaFacebook />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <FaTwitter />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <FaYoutube />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <FaInstagram />
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-      </section> */}
     </>
   );
 };
