@@ -8,16 +8,27 @@ import Servicethree from "../assets/images/s3.png";
 import Client1 from "../assets/images/client-1.jpg";
 import { GiAutoRepair } from "react-icons/gi";
 import { MdSelfImprovement, MdDomainAdd } from "react-icons/md";
-import { FaEnvelope, FaFacebook, FaInstagram, FaLocationArrow, FaMailBulk, FaPhone, FaStar, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaEnvelope, FaFacebook, FaInstagram, FaLocationArrow, FaMailBulk, FaPhone, FaPhoneAlt, FaStar, FaTwitter, FaYoutube } from "react-icons/fa";
+import Contactus from "./Contactus";
+import Service from "./Services";
+import About from "./About";
 const Homepage = () => {
   return (
     <>
-      <header>
+      {/* <header>
         <div className="header-top">
           <div className="center-wr">
             <div className="contact-info">
+                <div>
+                <span><FaPhoneAlt /></span>
               <a href="">Call : 02020202002</a>
+
+                </div>
+                <div>
+                <span><FaEnvelope /></span>
+
               <a href="">Mail : mail@gmail.com</a>
+                </div>
             </div>
           </div>
         </div>
@@ -44,7 +55,7 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-      </header>
+      </header> */}
       <section>
         <div className="banner">
           <div className="center-wr">
@@ -88,29 +99,7 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-      <section>
-        <div className="about-us">
-          <div className="center-wr">
-            <div className="about-us-content">
-              <div className="about-text">
-                <h2>About us</h2>
-                <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humour, or randomisedThere are many
-                  variations of passages of Lorem Ipsum available, but the
-                  majority have suffered alteration in some form, by injected
-                  humour, or randomised
-                </p>
-                <a href="">Read more</a>
-              </div>
-              <div className="about-image">
-                <img src={AboutImage} alt="about-img" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <About />
       <section>
         <div className="we-provide">
           <div className="center-wr">
@@ -132,40 +121,7 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-      <section>
-        <div className="our-services">
-          <div className="center-wr">
-            <h2>Our Services</h2>
-            <div className="our-service-cards">
-              <div className="service-card">
-                <img src={ServiceOne} alt="image" />
-                <h3>Maintinance</h3>
-                <p>
-                  when looking at its layout. The point of using Lorem Ipsum
-                  isthat it has a more-or-less normal
-                </p>
-              </div>
-              <div className="service-card">
-                <img src={Servicetwo} alt="image" />
-                <h3>Electrical</h3>
-                <p>
-                  when looking at its layout. The point of using Lorem Ipsum
-                  isthat it has a more-or-less normal
-                </p>
-              </div>
-              <div className="service-card">
-                <img src={Servicethree} alt="image" />
-                <h3>Plumbing</h3>
-                <p>
-                  when looking at its layout. The point of using Lorem Ipsum
-                  isthat it has a more-or-less normal
-                </p>
-              </div>
-              <a href="">View More</a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Service />
       <section>
         <div className="what-say">
           <div className="center-wr">
@@ -217,44 +173,8 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-      <section>
-        <div className="contact-us">
-          <div className="center-wr">
-            <h2>Contact us</h2>
-            <div className="contact-us-inner">
-              <div className="contact-form">
-                <form>
-                  <div className="form-field">
-                    <input type="text" placeholder="Name" />
-                  </div>
-                  <div className="form-field">
-                    <input type="text" placeholder="Phone Number" />
-                  </div>
-                  <div className="form-field">
-                    <input type="text" placeholder="Email" />
-                  </div>
-                  <div className="form-field">
-                    <textarea rows={5} placeholder="message"></textarea>
-                  </div>
-                  <button className="send-btn">send</button>
-                </form>
-              </div>
-              <div className="google-map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14723.756985404874!2d75.91148249999998!3d22.69330545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1723195603281!5m2!1sen!2sin"
-                  width="600"
-                  height="450"
-                  style={{border:0}}
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
+      <Contactus />
+      {/* <section>
         <div className="get-in-touch">
             <div className="center-wr">
                 <h2>Get in touch</h2>
@@ -299,7 +219,7 @@ const Homepage = () => {
                 </div>
             </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };

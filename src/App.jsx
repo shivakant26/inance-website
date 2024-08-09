@@ -1,9 +1,9 @@
 import React from "react"
-import Homepage from "./pages/Homepage"
+import RootRouter from "./routes"
 const App = () => {
   return (
     <>
-      <Homepage />
+      <RootRouter />
     </>
   )
 }
