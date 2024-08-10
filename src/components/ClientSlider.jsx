@@ -3,7 +3,6 @@ import { Navigation, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import Client1 from "../assets/images/client-1.jpg";
 import { FaAngleLeft, FaAngleRight, FaStar } from "react-icons/fa";
 import StarRating from "./common/StarRating";
 import { clinetSliderData } from "../utils/mockData";
@@ -44,7 +43,7 @@ const ClientSlider = () => {
           return (
             <SwiperSlide>
               <div className="clients-card" key={index}>
-                <div className="profile">
+                <div className="profile d-flex">
                   <img src={item.image} alt="profile-img" />
                   <div className="name-rating">
                     <p>{item.clientName}</p>
@@ -70,5 +69,4 @@ const ClientSlider = () => {
     </>
   );
 };
-
 export default ClientSlider;

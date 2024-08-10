@@ -15,7 +15,7 @@ const Homepage = () => {
     <>
       <div className="banner">
         <div className="center-wr">
-          <div className="banner-content">
+          <div className="banner-content d-flex">
             <div className="benner-text">
               <h2>
                 Repair and
@@ -36,7 +36,7 @@ const Homepage = () => {
       </div>
       <div className="feature-section">
         <div className="center-wr">
-          <div className="feature-cards">
+          <div className="feature-cards d-flex">
             {featureCardData.map((item, index) => {
               return <FeatureCard item={item} index={index} />;
             })}
@@ -46,7 +46,7 @@ const Homepage = () => {
       <About />
       <div className="we-provide">
         <div className="center-wr">
-          <div className="we-provide-content">
+          <div className="we-provide-content d-flex">
             <RightSection
               id="we-provide"
               className="we-image"

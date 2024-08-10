@@ -8,7 +8,7 @@ const Service = () => {
       <div className="our-services">
         <div className="center-wr">
           <h2>Our Services</h2>
-          <div className="our-service-cards">
+          <div className="our-service-cards d-flex">
             {ServiceCardData.map((item, index) => {
               return <ServiceCards item={item} index={index} />;
             })}

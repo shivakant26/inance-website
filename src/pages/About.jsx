@@ -8,7 +8,7 @@ const About = () => {
     <section>
       <div className="about-us">
         <div className="center-wr">
-          <div className="about-us-content">
+          <div className="about-us-content d-flex">
             <LeftSection
               className="about-text"
               data={AboutLeftData}

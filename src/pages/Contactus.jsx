@@ -5,7 +5,7 @@ const Contactus = () => {
     <div className="contact-us">
       <div className="center-wr">
         <h2>Contact us</h2>
-        <div className="contact-us-inner">
+        <div className="contact-us-inner d-flex">
           <div className="contact-form">
             <ContactForm />
           </div>

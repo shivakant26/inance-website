@@ -7,12 +7,11 @@ const Header = () => {
   const handleMenuItemClick = () => {
     setOpen(false); 
   };
-
   return (
     <header>
       <div className="header-top">
         <div className="center-wr">
-          <div className="contact-info">
+          <div className="contact-info d-flex">
             <div>
               <span>
                 <FaPhoneAlt />
@@ -31,7 +30,7 @@ const Header = () => {
       </div>
       <div className="header-bottom">
         <div className="center-wr">
-          <div className="top-header-inner">
+          <div className="top-header-inner d-flex">
             <a href="">Inance</a>
             <Hamburger toggled={isOpen} toggle={setOpen} />
             {
@@ -44,5 +43,4 @@ const Header = () => {
     </header>
   );
 };
-
 export default Header;
