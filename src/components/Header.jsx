@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import Hamburger from 'hamburger-react'
+import Menu from "./common/Menu";
 const Header = () => {
+  const [isOpen, setOpen] = useState(false)
+  const handleMenuItemClick = () => {
+    setOpen(false); 
+  };
+
   return (
     <header>
       <div className="header-top">
@@ -27,22 +33,11 @@ const Header = () => {
         <div className="center-wr">
           <div className="top-header-inner">
             <a href="">Inance</a>
-            <div className="menu">
-              <ul>
-                <li>
-                  <Link to="">Home</Link>
-                </li>
-                <li>
-                  <Link to="/about">About</Link>
-                </li>
-                <li>
-                  <Link to="/service">Services</Link>
-                </li>
-                <li>
-                  <Link to="/contact-us">Contact us</Link>
-                </li>
-              </ul>
-            </div>
+            <Hamburger toggled={isOpen} toggle={setOpen} />
+            {
+              isOpen && <Menu type="mobile" onMenuItemClick={handleMenuItemClick}/>
+            }
+            <Menu />
           </div>
         </div>
       </div>

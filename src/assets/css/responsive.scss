@@ -83,12 +83,12 @@
   .contact-us .contact-us-inner .contact-form,
   .contact-us .contact-us-inner .google-map {
     width: 100%;
+    flex-direction: column;
   }
   .get-in-touch .touch-contact {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
     align-content: center;
   }
   .get-in-touch .touch-contact .location::after,
@@ -113,14 +113,17 @@
 } /** 650 **/
 
 @media only screen and (max-width: 649px) {
-  .our-services .our-service-cards .service-card,
-  .what-say .what-say-clinets .clients-card {
+  .our-services .our-service-cards .service-card {
     width: 100%;
+  }
+  .what-say .what-say-clinets .clients-card{
+    width: 96%;
   }
   .banner .banner-content .benner-text h2 {
     font-size: 35px;
     color: #0355cc;
     line-height: 39px;
+    margin-bottom: 25px;
   }
   .feature-section {
     padding-bottom: 20px;
@@ -130,6 +133,40 @@
     margin-bottom: 20px;
     text-align: center;
   }
+  .menu {
+    display: none;
+  }
+  .hamburger-react {
+    display: block;
+    position: relative;
+    z-index: 12;
+  }
+  .mobile-menu {
+    position: absolute;
+    background-color: #fff;
+    right: 0;
+    top: 16%;
+    width: 100%;
+    ul {
+      list-style: none;
+      margin: 0 !important;
+      padding: 20px;
+      li {
+        padding: 10px 0px;
+        a {
+          font-size: 17px !important;
+          font-weight: unset !important;
+          color: #000;
+          &:hover{
+            color: #0355cc;
+          }
+        }
+      }
+    }
+  }
+  .our-services h2 ,.contact-us h2,.about-us .about-us-content .about-text h2 {
+    font-size: 30px;
+}
 } /** 480 **/
 
 @media only screen and (max-width: 479px) {

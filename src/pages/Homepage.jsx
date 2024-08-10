@@ -9,6 +9,7 @@ import Contactus from "./Contactus";
 import Service from "./Services";
 import About from "./About";
 import Button from "../components/common/Button";
+import ClientSlider from "../components/ClientSlider";
 const Homepage = () => {
   return (
     <>
@@ -85,7 +86,8 @@ const Homepage = () => {
           <div className="center-wr">
             <h2>What Our Clients Say</h2>
             <div className="what-say-clinets">
-              <div className="clients-card">
+              <ClientSlider />
+              {/* <div className="clients-card">
                 <div className="profile">
                   <img src={Client1} alt="profile-img" />
                   <div className="name-rating">
@@ -126,7 +128,7 @@ const Homepage = () => {
                   combined with a handful of model sentence structures, to
                   generate Lorem Ipsum
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
