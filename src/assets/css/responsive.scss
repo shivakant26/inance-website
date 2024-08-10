@@ -1,0 +1,145 @@
+@media only screen and (max-width: 1199px) {
+  .center-wr {
+    width: 96%;
+  }
+  .get-in-touch .touch-contact .location::after,
+  .get-in-touch .touch-contact .call::after {
+    width: 244px !important;
+    left: 172px !important;
+  }
+} /* upto 1024 */
+
+@media only screen and (max-width: 1023px) {
+  .banner .banner-content .benner-text {
+    width: 47%;
+  }
+  .get-in-touch .touch-contact .location::after,
+  .get-in-touch .touch-contact .call::after {
+    width: 231px !important;
+    left: 166px !important;
+  }
+} /** 980 **/
+
+@media only screen and (max-width: 979px) {
+  .banner .banner-content img {
+    width: 51%;
+  }
+  .about-us .about-us-content .about-text {
+    padding: 0px 0px;
+  }
+  .we-provide .we-provide-content .we-provide-text {
+    padding: 22px 0px;
+  }
+  .link-btn {
+    margin-top: 0 !important;
+  }
+  .we-provide .we-provide-content .we-provide-text h2 {
+    font-size: 26px;
+  }
+  .what-say {
+    padding: 12px 0px;
+  }
+  .what-say h2 {
+    font-size: 31px;
+  }
+  .get-in-touch h2 {
+    font-size: 31px;
+    margin-bottom: 45px;
+    text-align: center;
+    color: #fff;
+  }
+  .get-in-touch .touch-contact .location::after,
+  .get-in-touch .touch-contact .call::after {
+    width: 200px !important;
+    left: 135px !important;
+  }
+  .get-in-touch {
+    padding: 36px 0px;
+  }
+  .get-in-touch .follow-us h3 {
+    font-size: 19px;
+  }
+} /** 768 **/
+
+@media only screen and (max-width: 767px) {
+  .banner .banner-content .benner-text {
+    width: 100%;
+    margin: 14px 0px;
+    padding: 10px 0px;
+  }
+  .banner .banner-content img {
+    width: 100%;
+  }
+  .about-us .about-us-content .about-text,
+  .about-us .about-us-content .about-image {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .about-us {
+    padding: 20px 0px 0px 0px;
+  }
+  .we-provide .we-provide-content .we-image,
+  .we-provide .we-provide-content .we-provide-text,
+  .contact-us .contact-us-inner .contact-form,
+  .contact-us .contact-us-inner .google-map {
+    width: 100%;
+  }
+  .get-in-touch .touch-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+  }
+  .get-in-touch .touch-contact .location::after,
+  .get-in-touch .touch-contact .call::after,
+  .get-in-touch .touch-contact .mail::after {
+    width: 2px !important;
+    left: 50% !important;
+    top: 56px;
+    height: 25px !important;
+  }
+  .get-in-touch .touch-contact .location,
+  .get-in-touch .touch-contact .call,
+  .get-in-touch .touch-contact .mail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 31px;
+    position: relative;
+    margin-bottom: 33px;
+  }
+} /** 650 **/
+
+@media only screen and (max-width: 649px) {
+  .our-services .our-service-cards .service-card,
+  .what-say .what-say-clinets .clients-card {
+    width: 100%;
+  }
+  .banner .banner-content .benner-text h2 {
+    font-size: 35px;
+    color: #0355cc;
+    line-height: 39px;
+  }
+  .feature-section {
+    padding-bottom: 20px;
+  }
+  .about-us .about-us-content .about-text h2 {
+    font-size: 33px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+} /** 480 **/
+
+@media only screen and (max-width: 479px) {
+  .feature-section .feature-cards .feature-card {
+    width: 100%;
+  }
+  .banner .banner-content .benner-text {
+    text-align: center;
+  }
+} /** 320 **/
+
+@media only screen and (max-width: 320px) {
+}
