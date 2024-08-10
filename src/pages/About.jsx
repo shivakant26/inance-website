@@ -1,30 +1,24 @@
 import React from "react";
 import AboutImage from "../assets/images/about-img.jpg";
-import Button from "../components/common/Button";
-
+import LeftSection from "../components/common/sections/LeftSection";
+import { AboutLeftData } from "../utils/mockPage";
+import RightSection from "../components/common/sections/RigthSection";
 const About = () => {
   return (
     <section>
       <div className="about-us">
         <div className="center-wr">
           <div className="about-us-content">
-            <div className="about-text">
-              <h2>About us</h2>
-              <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomisedThere are many variations of
-                passages of Lorem Ipsum available, but the majority have
-                suffered alteration in some form, by injected humour, or
-                randomised
-              </p>
-              <Button type="link" className="link-btn">
-                Read more
-              </Button>
-            </div>
-            <div className="about-image">
-              <img src={AboutImage} alt="about-img" />
-            </div>
+            <LeftSection
+              className="about-text"
+              data={AboutLeftData}
+              btnlinkClass="link-btn"
+            />
+            <RightSection
+              className="about-image"
+              image={AboutImage}
+              alt="about-img"
+            />
           </div>
         </div>
       </div>

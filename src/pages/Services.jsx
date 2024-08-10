@@ -1,45 +1,25 @@
 import React from "react";
-import ServiceOne from "../assets/images/s1.png";
-import Servicetwo from "../assets/images/s2.png";
-import Servicethree from "../assets/images/s3.png";
 import Button from "../components/common/Button";
-const Service = () =>{
-    return(
-        <section>
-        <div className="our-services">
-          <div className="center-wr">
-            <h2>Our Services</h2>
-            <div className="our-service-cards">
-              <div className="service-card">
-                <img src={ServiceOne} alt="image" />
-                <h3>Maintinance</h3>
-                <p>
-                  when looking at its layout. The point of using Lorem Ipsum
-                  isthat it has a more-or-less normal
-                </p>
-              </div>
-              <div className="service-card">
-                <img src={Servicetwo} alt="image" />
-                <h3>Electrical</h3>
-                <p>
-                  when looking at its layout. The point of using Lorem Ipsum
-                  isthat it has a more-or-less normal
-                </p>
-              </div>
-              <div className="service-card">
-                <img src={Servicethree} alt="image" />
-                <h3>Plumbing</h3>
-                <p>
-                  when looking at its layout. The point of using Lorem Ipsum
-                  isthat it has a more-or-less normal
-                </p>
-              </div>
-              <Button type="link" className="link-btn">View More</Button>
-            </div>
+import ServiceCards from "../components/common/ServiceCards";
+import { ServiceCardData } from "../utils/mockData";
+const Service = () => {
+  return (
+    <section>
+      <div className="our-services">
+        <div className="center-wr">
+          <h2>Our Services</h2>
+          <div className="our-service-cards">
+            {ServiceCardData.map((item, index) => {
+              return <ServiceCards item={item} index={index} />;
+            })}
+            <Button type="link" className="link-btn">
+              View More
+            </Button>
           </div>
         </div>
-      </section>
-    )
-}
+      </div>
+    </section>
+  );
+};
 
 export default Service;

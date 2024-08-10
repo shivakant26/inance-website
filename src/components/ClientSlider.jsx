@@ -5,6 +5,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Client1 from "../assets/images/client-1.jpg";
 import { FaAngleLeft, FaAngleRight, FaStar } from "react-icons/fa";
+import StarRating from "./common/StarRating";
+import { clinetSliderData } from "../utils/mockData";
 const ClientSlider = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
@@ -38,98 +40,24 @@ const ClientSlider = () => {
           });
         }}
       >
-        <SwiperSlide>
-          <div className="clients-card">
-            <div className="profile">
-              <img src={Client1} alt="profile-img" />
-              <div className="name-rating">
-                <p>jorck morik</p>
-                <div className="stars">
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
+        {clinetSliderData.map((item, index) => {
+          return (
+            <SwiperSlide>
+              <div className="clients-card" key={index}>
+                <div className="profile">
+                  <img src={item.image} alt="profile-img" />
+                  <div className="name-rating">
+                    <p>{item.clientName}</p>
+                    <div className="stars">
+                      <StarRating count={5} />
+                    </div>
+                  </div>
                 </div>
+                <p>{item.aboutClient}</p>
               </div>
-            </div>
-            <p>
-              chunks as necessary, making this the first true generator on the
-              Internet. It uses a dictionary of over 200 Latin words, combined
-              with a handful of model sentence structures, to generate Lorem
-              Ipsum
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="clients-card">
-            <div className="profile">
-              <img src={Client1} alt="profile-img" />
-              <div className="name-rating">
-                <p>jorck morik</p>
-                <div className="stars">
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                </div>
-              </div>
-            </div>
-            <p>
-              chunks as necessary, making this the first true generator on the
-              Internet. It uses a dictionary of over 200 Latin words, combined
-              with a handful of model sentence structures, to generate Lorem
-              Ipsum
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="clients-card">
-            <div className="profile">
-              <img src={Client1} alt="profile-img" />
-              <div className="name-rating">
-                <p>jorck morik</p>
-                <div className="stars">
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                </div>
-              </div>
-            </div>
-            <p>
-              chunks as necessary, making this the first true generator on the
-              Internet. It uses a dictionary of over 200 Latin words, combined
-              with a handful of model sentence structures, to generate Lorem
-              Ipsum
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="clients-card">
-            <div className="profile">
-              <img src={Client1} alt="profile-img" />
-              <div className="name-rating">
-                <p>jorck morik</p>
-                <div className="stars">
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                </div>
-              </div>
-            </div>
-            <p>
-              chunks as necessary, making this the first true generator on the
-              Internet. It uses a dictionary of over 200 Latin words, combined
-              with a handful of model sentence structures, to generate Lorem
-              Ipsum
-            </p>
-          </div>
-        </SwiperSlide>
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
       <div className="custom-navigation">
         <button ref={prevRef} className="custom-prev">
