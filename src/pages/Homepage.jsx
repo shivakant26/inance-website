@@ -10,6 +10,7 @@ import FeatureCard from "../components/common/FeatureCard";
 import RightSection from "../components/common/sections/RigthSection";
 import LeftSection from "../components/common/sections/LeftSection";
 import { weProvideData } from "../utils/mockPage";
+import GoToTop from "../components/GotoTop";
 const Homepage = () => {
   return (
     <>
@@ -71,6 +72,7 @@ const Homepage = () => {
         </div>
       </div>
       <Contactus />
+      <GoToTop />
     </>
   );
 };

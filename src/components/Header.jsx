@@ -1,14 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import Hamburger from 'hamburger-react'
 import Menu from "./common/Menu";
 const Header = () => {
-  const [isOpen, setOpen] = useState(false)
+  const [isOpen, setOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+  const handleScroll = () => {
+    if (window.pageYOffset > 50) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   const handleMenuItemClick = () => {
     setOpen(false); 
   };
   return (
-    <header>
+    <header className={`header ${isSticky ? 'sticky' : ''}`}>
       <div className="header-top">
         <div className="center-wr">
           <div className="contact-info d-flex">
